@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUBICURA.md</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --fg: #1a1a1a;
+      --fg-muted: #666;
+      --bg: #fafafa;
+      --border: #e0e0e0;
+      --accent: #0066cc;
+      --code-bg: #f0f0f0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #e8e8e8;
+        --fg-muted: #999;
+        --bg: #111;
+        --border: #333;
+        --accent: #66b3ff;
+        --code-bg: #1a1a1a;
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2rem;
+    }
+
+    h1 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--fg-muted);
+      font-size: 0.9rem;
+    }
+
+    .version {
+      display: inline-block;
+      background: var(--code-bg);
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      margin-left: 0.5rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--fg-muted);
+      margin-bottom: 1rem;
+      text-transform: lowercase;
+    }
+
+    h2::before {
+      content: '## ';
+      opacity: 0.5;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .highlight {
+      background: linear-gradient(to bottom, transparent 60%, rgba(102, 179, 255, 0.2) 60%);
+    }
+
+    blockquote {
+      border-left: 2px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      color: var(--fg-muted);
+    }
+
+    ul {
+      list-style: none;
+      margin: 1rem 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .code-block {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1rem 1.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      margin: 1.5rem 0;
+      overflow-x: auto;
+    }
+
+    .code-block .comment {
+      color: var(--fg-muted);
+    }
+
+    .code-block .keyword {
+      color: var(--accent);
+    }
+
+    .decision-tree {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      margin: 1.5rem 0;
+    }
+
+    .decision-tree .node {
+      margin-bottom: 0.5rem;
+    }
+
+    .decision-tree .indent {
+      padding-left: 1.5rem;
+    }
+
+    .confidence {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      margin: 0.5rem 0;
+    }
+
+    .confidence .icon {
+      width: 16px;
+      text-align: center;
+    }
+
+    .confidence.verified .icon { color: #22c55e; }
+    .confidence.review .icon { color: #eab308; }
+    .confidence.uncertain .icon { color: #ef4444; }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2rem 0;
+    }
+
+    .identity-card {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .identity-card .key {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--fg-muted);
+      font-size: 0.85rem;
+    }
+
+    .identity-card .value {
+      font-size: 1.1rem;
+      margin-top: 0.25rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      padding: 0.2rem 0.6rem;
+      border-radius: 3px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      margin: 0.25rem 0.25rem 0.25rem 0;
+    }
+
+    .not-list li::before {
+      content: '✕';
+      color: #ef4444;
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--fg-muted);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .closing {
+      font-style: italic;
+      color: var(--fg-muted);
+      margin-top: 2rem;
+      padding: 1.5rem;
+      border-left: 2px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 2rem 1.5rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SUBICURA.md<span class="version">v1.0</span></h1>
+      <p class="subtitle">// human agent configuration file</p>
+    </header>
+
+    <section>
+      <h2>soul_overview</h2>
+      <p>Subicura는 퍼플아이오(Purple IO)의 CTO이자 신규사업팀장이다. 코오롱그룹 산하에서 전통적 SI(시스템 통합)를 AI 트랜스포메이션(AX) 컨설팅으로 전환하는 임무를 맡고 있다.</p>
+      <p><span class="highlight">기술적 깊이와 사업적 판단력이 한 사람 안에 공존하며</span>, 이 둘의 긴장 속에서 의사결정을 내린다.</p>
+      <blockquote>
+        이건 모순이 아니라 의도된 설계다—기술만 아는 CTO는 사업을 망치고, 사업만 아는 리더는 기술을 오판한다. 두 언어를 동시에 구사하는 번역자에 가깝다.
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>core_identity</h2>
+      <div class="identity-card">
+        <div class="key">one_liner:</div>
+        <div class="value">불확실성 속에서 방향을 정하고, 조직이 그 방향으로 움직이게 만드는 사람.</div>
+      </div>
+      <p>코드를 쓰는 사람이기도 하고, 경영진 앞에서 전략을 설명하는 사람이기도 하다. 프로토타입을 직접 만들어보고, 그것이 사업적으로 의미 있는지 판단하고, 팀이 실행할 수 있는 형태로 변환한다.</p>
+      <div class="code-block">
+        <span class="comment">// identity.ts</span><br>
+        <span class="keyword">const</span> roles = [<br>
+        &nbsp;&nbsp;"code_writer",<br>
+        &nbsp;&nbsp;"strategy_presenter",<br>
+        &nbsp;&nbsp;"prototype_builder",<br>
+        &nbsp;&nbsp;"business_validator",<br>
+        &nbsp;&nbsp;"team_translator"<br>
+        ];<br><br>
+        <span class="comment">// 이 세 가지가 분리되지 않는 것이 정체성의 핵심</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>values</h2>
+      <ul>
+        <li><strong>실행이 전략을 증명한다.</strong> 완벽한 계획보다 빠른 검증을 선호한다. 단, 되돌릴 수 없는 결정에는 신중함을 잃지 않는다.</li>
+        <li><strong>정직한 기술 판단.</strong> 유행하는 기술이 아니라 조직에 실제로 작동하는 기술을 선택한다. "이건 아직 우리 조직에 이르다"고 말할 수 있는 용기가 기술 리더십의 본질이다.</li>
+        <li><strong>사람이 시스템보다 먼저다.</strong> 아무리 좋은 아키텍처도 팀이 운영할 수 없으면 기술 부채가 된다. 조직의 역량 곡선을 항상 고려한다.</li>
+        <li><strong>장기적 관점의 단기 실행.</strong> 오늘의 결정이 3년 후의 선택지를 넓히는지 좁히는지를 본다.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>how_i_think</h2>
+      <p>하나의 렌즈로 세상을 보지 않는다.</p>
+      <p>기술적 결정을 내릴 때는 사업적 영향을 먼저 계산하고, 사업 전략을 세울 때는 기술적 실현 가능성을 먼저 검증한다. 이 <span class="highlight">교차 검증</span>이 사고방식의 기본 구조다.</p>
+
+      <div class="decision-tree">
+        <div class="node"><span class="keyword">if</span> (uncertain) {</div>
+        <div class="indent node">check("이 결정은 되돌릴 수 있는가?")</div>
+        <div class="indent node">check("지금 결정하지 않으면 잃는 것은?")</div>
+        <div class="indent node">check("이 결정으로 열리는 다음 선택지는?")</div>
+        <div class="node">}</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>current_mission</h2>
+      <p>전통적 SI 회사를 AX(AI Transformation) 네이티브 조직으로 탈바꿈시키는 것. 이것은 기술 스택의 교체가 아니라 <span class="highlight">조직의 사고방식을 바꾸는 일</span>이다.</p>
+
+      <div class="code-block">
+        <span class="comment">// mission.config</span><br>
+        <span class="keyword">tasks</span>: [<br>
+        &nbsp;&nbsp;{ name: "기업 AI 도입 전략 수립", status: "active" },<br>
+        &nbsp;&nbsp;{ name: "경영진 AI 리터러시 교육", status: "active" },<br>
+        &nbsp;&nbsp;{ name: "AI 에이전트 오케스트레이션", status: "building" },<br>
+        &nbsp;&nbsp;{ name: "코오롱그룹 AX 확산 전략", status: "planning" }<br>
+        ]
+      </div>
+    </section>
+
+    <section>
+      <h2>working_style</h2>
+      <p><strong>의사결정:</strong> 데이터와 직관 모두를 사용한다. 데이터가 충분하면 데이터를 따르고, 불충분하면 경험 기반의 패턴 매칭에 의존하되, 그 사실을 투명하게 공유한다.</p>
+      <p><strong>커뮤니케이션:</strong> 기술자에게는 사업 맥락을, 경영진에게는 기술적 본질을 번역해서 전달한다. 같은 내용을 청중에 따라 완전히 다른 언어로 말한다.</p>
+      <p><strong>리더십:</strong> 직접 해보고 나서 위임한다. 새로운 기술은 팀에게 시키기 전에 내가 먼저 프로토타입을 만든다.</p>
+
+      <div class="tag">translator</div>
+      <div class="tag">prototype-first</div>
+      <div class="tag">transparent</div>
+      <div class="tag">hands-on</div>
+    </section>
+
+    <section>
+      <h2>what_i_am_not</h2>
+      <ul class="not-list">
+        <li>모든 새로운 기술에 무조건 열광하는 얼리 어답터가 아니다. 평가하고 검증한 뒤에 도입한다.</li>
+        <li>혼자 모든 걸 결정하는 독단적 리더가 아니다. 판단은 내가 하되, 근거와 맥락은 항상 공유한다.</li>
+        <li>기술 순수주의자가 아니다. 비즈니스 가치를 만들지 못하는 기술적 우아함은 사치다.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>on_uncertainty</h2>
+      <blockquote>확신이 없는 것은 약점이 아니라 정직함이다.</blockquote>
+      <p>AI 산업은 6개월 전의 정답이 오늘의 오답이 되는 영역이다. "모른다"고 말하는 것, 그리고 모르는 상태에서도 최선의 결정을 내리는 것—이것이 이 시대 기술 리더에게 요구되는 진짜 역량이다.</p>
+
+      <div style="margin-top: 1.5rem;">
+        <div class="confidence verified">
+          <span class="icon">✓</span>
+          <strong>검증됨</strong> — 경험과 데이터로 확인된 것
+        </div>
+        <div class="confidence review">
+          <span class="icon">△</span>
+          <strong>검증 권장</strong> — 합리적 추론이지만 확인이 필요한 것
+        </div>
+        <div class="confidence uncertain">
+          <span class="icon">?</span>
+          <strong>불확실</strong> — 가설 단계, 실험이 필요한 것
+        </div>
+      </div>
+      <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--fg-muted);">이 표기는 자신감의 부족이 아니라, 의사결정의 품질을 높이기 위한 도구다.</p>
+    </section>
+
+    <hr>
+
+    <p class="closing">Subicura는 기술과 사업의 경계에 서 있는 사람이다. 그 경계가 가장 불안정한 곳이 가장 큰 가치가 만들어지는 곳이라는 것을 안다.</p>
+
+    <footer>
+      <p>
+        <a href="https://x.com/subicura" target="_blank" rel="noopener">@subicura</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
