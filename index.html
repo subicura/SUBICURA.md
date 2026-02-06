@@ -184,24 +184,6 @@
       padding-left: 1.5rem;
     }
 
-    .confidence {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.85rem;
-      margin: 0.5rem 0;
-    }
-
-    .confidence .icon {
-      width: 16px;
-      text-align: center;
-    }
-
-    .confidence.verified .icon { color: #22c55e; }
-    .confidence.review .icon { color: #eab308; }
-    .confidence.uncertain .icon { color: #ef4444; }
-
     hr {
       border: none;
       border-top: 1px solid var(--border);
@@ -388,22 +370,6 @@
       <h2>on_uncertainty</h2>
       <blockquote>확신이 없는 것은 약점이 아니라 정직함이다.</blockquote>
       <p>AI 산업은 6개월 전의 정답이 오늘의 오답이 되는 영역이다. "모른다"고 말하는 것, 그리고 모르는 상태에서도 최선의 결정을 내리는 것—이것이 이 시대 기술 리더에게 요구되는 진짜 역량이다.</p>
-
-      <div style="margin-top: 1.5rem;">
-        <div class="confidence verified">
-          <span class="icon">✓</span>
-          <strong>검증됨</strong> — 경험과 데이터로 확인된 것
-        </div>
-        <div class="confidence review">
-          <span class="icon">△</span>
-          <strong>검증 권장</strong> — 합리적 추론이지만 확인이 필요한 것
-        </div>
-        <div class="confidence uncertain">
-          <span class="icon">?</span>
-          <strong>불확실</strong> — 가설 단계, 실험이 필요한 것
-        </div>
-      </div>
-      <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--fg-muted);">이 표기는 자신감의 부족이 아니라, 의사결정의 품질을 높이기 위한 도구다.</p>
     </section>
 
     <hr>
