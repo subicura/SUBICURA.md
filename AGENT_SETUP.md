@@ -30,3 +30,9 @@ claude plugin install code-simplifier@claude-plugins-official
 ```bash
 claude -p "프롬프트 내용" --dangerously-skip-permissions
 ```
+
+## 작업 방식
+
+1. **작업 요청 접수**: main branch에서 pull 받고 새 작업 branch 생성
+2. **작업 진행**: claude code로 코드 수정
+3. **작업 완료**: 커밋 후 GitHub Pull Request 생성, 확인 가능한 PR URL 공유
