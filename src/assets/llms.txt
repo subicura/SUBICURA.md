@@ -53,9 +53,17 @@ Active tasks:
 
 Lack of certainty is not weakness — it is honesty. In the AI industry, last quarter's right answer becomes today's wrong answer. Saying "I don't know" and still making the best possible decision — that is the real competency required of technology leaders today.
 
+## TIL (Today I Learned)
+
+Knowledge patches — things learned through work and experience. Unrecorded learning evaporates.
+
+Recent learnings:
+- "I am the bottleneck now." The bottleneck is no longer execution speed but human judgment speed. In the age of agent automation, a leader's role is not doing the work but making decisions fast enough for agents to move in the right direction.
+
 ## Links
 
 - [SUBICURA.md](https://subicura.md/): Main page
 - [Deps](https://subicura.md/deps/): Tools and hardware
+- [TIL](https://subicura.md/til/): Today I Learned — knowledge patches
 - [Help / Recruiting](https://subicura.md/help/): Purple IO is hiring
 - [Twitter / X](https://x.com/subicura): @subicura
