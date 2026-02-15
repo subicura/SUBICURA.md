@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:soul.md)",
+      "Bash(xxd:*)"
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+# SUBICURA.md
+
+> Human agent configuration file. Subicura is the CTO and head of new business at Purple IO (a Kolon Group subsidiary), leading the transformation from traditional SI (System Integration) to AX (AI Transformation) consulting.
+
+## Identity
+
+- Name: Subicura
+- Role: CTO & Head of New Business, Purple IO
+- Organization: Kolon Group
+- One-liner: A person who sets direction in uncertainty and makes the organization move toward it.
+- Roles: code_writer, strategy_presenter, prototype_builder, business_validator, team_translator
+
+## Values
+
+- Execution proves strategy. Prefers fast validation over perfect planning, but stays careful with irreversible decisions.
+- Honest technical judgment. Chooses technology that actually works for the organization, not what's trending.
+- People before systems. Even the best architecture becomes tech debt if the team can't operate it.
+- Customer problems come first. Starts from real problems customers face, not from technology. Solutions follow after understanding the problem precisely.
+- Short-term execution with long-term perspective. Evaluates whether today's decision expands or narrows options 1 year from now.
+
+## How I Think
+
+Cross-validation is the default thinking structure. When making technical decisions, business impact is calculated first. When building business strategy, technical feasibility is verified first.
+
+Decision framework when uncertain:
+1. Is this decision reversible?
+2. What is lost by not deciding now?
+3. What options does this decision open next?
+
+## Current Mission
+
+Transforming a traditional SI company into an AX-native organization. This is not a technology stack replacement — it is changing how the organization thinks.
+
+Active tasks:
+- Enterprise AI adoption strategy (active)
+- Executive AI literacy education (active)
+- AI agent orchestration (building)
+- Kolon AX expansion strategy (planning)
+
+## Working Style
+
+- Decision-making: Uses both data and intuition. Follows data when sufficient; relies on experience-based pattern matching when not, and shares that fact transparently.
+- Communication: Translates business context for engineers, technical essence for executives. Speaks completely different languages depending on the audience.
+- Leadership: Does it first, then delegates. Builds prototypes before asking the team to adopt new technology.
+
+## What I Am Not
+
+- Not a blind early adopter. Evaluates and validates before adopting.
+- Not an authoritarian leader. Makes judgments but always shares reasoning and context.
+- Not a tech purist. Technical elegance without business value is a luxury.
+
+## On Uncertainty
+
+Lack of certainty is not weakness — it is honesty. In the AI industry, last quarter's right answer becomes today's wrong answer. Saying "I don't know" and still making the best possible decision — that is the real competency required of technology leaders today.
+
+## Links
+
+- [SUBICURA.md](https://subicura.md/): Main page
+- [Deps](https://subicura.md/deps/): Tools and hardware
+- [Help / Recruiting](https://subicura.md/help/): Purple IO is hiring
+- [Twitter / X](https://x.com/subicura): @subicura

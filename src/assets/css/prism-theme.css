@@ -1,0 +1,99 @@
+/* Light: One Light */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: hsl(230, 8%, 24%);
+}
+
+pre[class*="language-"] {
+  background: hsl(230, 1%, 98%);
+}
+
+.token.comment,
+.token.prolog,
+.token.cdata { color: hsl(230, 4%, 64%); }
+
+.token.doctype,
+.token.punctuation,
+.token.entity { color: hsl(230, 8%, 24%); }
+
+.token.attr-name,
+.token.class-name,
+.token.boolean,
+.token.constant,
+.token.number,
+.token.atrule { color: hsl(35, 99%, 36%); }
+
+.token.keyword { color: hsl(301, 63%, 40%); }
+
+.token.property,
+.token.tag,
+.token.symbol,
+.token.deleted,
+.token.important { color: hsl(5, 74%, 59%); }
+
+.token.selector,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted,
+.token.regex,
+.token.attr-value { color: hsl(119, 34%, 47%); }
+
+.token.variable,
+.token.operator,
+.token.function { color: hsl(221, 87%, 60%); }
+
+.token.url { color: hsl(198, 99%, 37%); }
+
+.token.bold { font-weight: bold; }
+.token.comment,
+.token.italic { font-style: italic; }
+
+/* Dark: One Dark */
+@media (prefers-color-scheme: dark) {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #abb2bf;
+  }
+
+  pre[class*="language-"] {
+    background: #282c34;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata { color: #5c6370; }
+
+  .token.doctype,
+  .token.punctuation,
+  .token.entity { color: #abb2bf; }
+
+  .token.attr-name,
+  .token.class-name,
+  .token.boolean,
+  .token.constant,
+  .token.number,
+  .token.atrule { color: #d19a66; }
+
+  .token.keyword { color: #c678dd; }
+
+  .token.property,
+  .token.tag,
+  .token.symbol,
+  .token.deleted,
+  .token.important { color: #e06c75; }
+
+  .token.selector,
+  .token.string,
+  .token.char,
+  .token.builtin,
+  .token.inserted,
+  .token.regex,
+  .token.attr-value { color: #98c379; }
+
+  .token.variable,
+  .token.operator,
+  .token.function { color: #61afef; }
+
+  .token.url { color: #56b6c2; }
+}
