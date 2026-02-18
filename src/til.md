@@ -2,7 +2,7 @@
 layout: base.njk
 title: "TIL.md — SUBICURA"
 heading: "TIL.md"
-version: "2026-02-15"
+version: "2026-02-18"
 subtitle: "// today i learned, knowledge patches"
 description: "today i learned — knowledge patches"
 backLink: true
