@@ -58,6 +58,7 @@ Lack of certainty is not weakness — it is honesty. In the AI industry, last qu
 Knowledge patches — things learned through work and experience. Unrecorded learning evaporates.
 
 Recent learnings:
+- Thin Client Paradigm: Terminals, CLIs, markdown, and conversational interfaces are rising — agents will handle the logic.
 - PRD (Product Requirements Document): When AI output feels off, the gap is usually between expectation and result. Bridging it requires design and context (requirements, constraints, success criteria) — PRD is the device that fixes expectations in writing.
 - "I am the bottleneck now." The bottleneck is no longer execution speed but human judgment speed. In the age of agent automation, a leader's role is not doing the work but making decisions fast enough for agents to move in the right direction.
 

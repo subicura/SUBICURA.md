@@ -17,6 +17,7 @@ patch_policy:
 
 ## 2026-02
 
+- **Thin Client 패러다임** — 터미널, CLI, 마크다운, 대화형 인터페이스가 뜨고 에이전트가 로직을 처리할 것이다.
 - **Taste is a new core skill** — 취향이 중요하고 즐길줄 아는 자가 살아남는다.
 - **PRD(Product Requirements Document)** — AI 결과가 별로일 때, 원인은 대부분 기대와 결과의 갭이다. 그 갭을 메우는 건 설계와 컨텍스트(요구사항·제약·성공기준)이고, PRD는 그걸 문서로 고정해 기대치를 맞추는 장치다.
 - **Sarasa Gothic(사라사 고딕)** — CJK 지원 모노스페이스 폰트: [be5invis/Sarasa-Gothic](https://github.com/be5invis/Sarasa-Gothic) 반각(Term)용 폰트도 지원해서 터미널·에디터용으로 쓸만하다.
