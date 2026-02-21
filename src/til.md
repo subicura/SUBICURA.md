@@ -2,7 +2,7 @@
 layout: base.njk
 title: "TIL.md — SUBICURA"
 heading: "TIL.md"
-version: "2026-02-18"
+version: "2026-02-21"
 subtitle: "// today i learned, knowledge patches"
 description: "today i learned — knowledge patches"
 backLink: true
@@ -17,6 +17,7 @@ patch_policy:
 
 ## 2026-02
 
+- **생각의 외주화** — AI를 활용해 사고를 대체하는 게 아니라, 사람의 사고력을 더 강화하는 방식으로 사용하는 관점.
 - **AI OS** — 개인화, 오케스트레이션, 맥락 이해를 기반으로 AI 비서·에이전트가 사용자 환경을 운영하는 패러다임.
 - **Thin Client 패러다임** — 터미널, CLI, 마크다운, 대화형 인터페이스가 뜨고 에이전트가 로직을 처리할 것이다.
 - **Taste is a new core skill** — 취향이 중요하고 즐길줄 아는 자가 살아남는다.
