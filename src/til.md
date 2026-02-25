@@ -2,7 +2,7 @@
 layout: base.njk
 title: "TIL.md — SUBICURA"
 heading: "TIL.md"
-version: "2026-02-21"
+version: "2026-02-25"
 subtitle: "// today i learned, knowledge patches"
 description: "today i learned — knowledge patches"
 backLink: true
@@ -17,6 +17,8 @@ patch_policy:
 
 ## 2026-02
 
+- **Customer is always right** — ㅇㅇ 맞음.
+- **딸깍과 우울** — 인정하고 내려놓고 좋은걸 만들자.
 - **Harness** — AI의 힘을 활용하다/제어하다.
 - **초개인화 개인 앱** — 가벼운 기능은 누구나 쉽게 만들 수 있고, 복잡한 앱도 실제로는 필요한 기능이 생각보다 많지 않다.
 - **UI 디테일 마음에 든다** — https://sorenblank.com/ 의 디테일한 인터랙션과 타이포 밸런스가 인상적.
