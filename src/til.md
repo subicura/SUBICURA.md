@@ -2,7 +2,7 @@
 layout: base.njk
 title: "TIL.md — SUBICURA"
 heading: "TIL.md"
-version: "2026-02-25"
+version: "2026-03-01"
 subtitle: "// today i learned, knowledge patches"
 description: "today i learned — knowledge patches"
 backLink: true
@@ -14,6 +14,10 @@ backLink: true
 patch_policy:
   새로운 것을 배울 때마다 기록한다.
 ```
+
+## 2026-03
+
+- **Humans steer, Agents execute** — Agent를 위한 환경을 만들어주기.
 
 ## 2026-02
 
