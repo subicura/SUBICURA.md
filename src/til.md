@@ -2,7 +2,7 @@
 layout: base.njk
 title: "TIL.md — SUBICURA"
 heading: "TIL.md"
-version: "2026-03-01"
+version: "2026-03-19"
 subtitle: "// today i learned, knowledge patches"
 description: "today i learned — knowledge patches"
 backLink: true
@@ -17,6 +17,7 @@ patch_policy:
 
 ## 2026-03
 
+- **Institutional AI** — 조직수준에서 의사결정·운영·지식체계에 AI를 구조적으로 내재화하는 것
 - **Humans steer, Agents execute** — Agent를 위한 환경을 만들어주기.
 
 ## 2026-02
